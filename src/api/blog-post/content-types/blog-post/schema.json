@@ -36,6 +36,12 @@
     },
     "DateofPublish": {
       "type": "boolean"
+    },
+    "blog_catagory": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::blog-catagory.blog-catagory",
+      "inversedBy": "blog_posts"
     }
   }
 }
